@@ -12,11 +12,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FollowingCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ResourcesPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EResource.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FollowingCamera.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ResourcePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EResource.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ResourcePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ResourcesPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1n7asY4LKaBL75QiayH1wQseGe7" />
@@ -60,6 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610743791548</updated>
       <workItem from="1610743797099" duration="2165000" />
+      <workItem from="1611083473127" duration="2446000" />
     </task>
     <servers />
   </component>
@@ -75,6 +82,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

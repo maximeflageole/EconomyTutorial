@@ -6,14 +6,27 @@ public class CharacterController : MonoBehaviour
 {
     [SerializeField] private float m_acceleration = 50.0f;
     [SerializeField] private float m_maxSpeed = 10.0f;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    [SerializeField] private ResourcesPanel m_resourcesPanel;
+
+    private int m_copperAmount = 0;
+    private int m_ironAmount = 0;
+
+    void Update()
+    {
+        //TODO: Remove this once resource collecting is done, it is purely for testing
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            m_copperAmount += 10;
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            m_ironAmount += 10;
+        }
+        UpdateResources();
+    }
+    
     void FixedUpdate()
     {
         Vector2 movement = Vector2.zero;
@@ -46,5 +59,11 @@ public class CharacterController : MonoBehaviour
         {
             rigidbody2d.velocity = rigidbody2d.velocity.normalized * m_maxSpeed;
         }
+    }
+
+    void UpdateResources()
+    {
+        m_resourcesPanel.UpdateCopper(m_copperAmount);
+        m_resourcesPanel.UpdateIron(m_ironAmount);
     }
 }
