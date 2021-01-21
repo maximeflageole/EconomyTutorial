@@ -1,7 +1,7 @@
 ﻿[System.Serializable]
 public enum EResource
 {
-    Bronze,
+    Copper,
     Iron,
     Wood
 }

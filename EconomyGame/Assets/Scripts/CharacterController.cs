@@ -1,28 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+    public static CharacterController Instance { get; private set; }
     [SerializeField] private float m_acceleration = 50.0f;
     [SerializeField] private float m_maxSpeed = 10.0f;
+    [SerializeField] private Animator m_animator;
+    [SerializeField] private Selector m_selector;
+    [SerializeField] private MeleeWeapon m_weapon;
 
     [SerializeField] private ResourcesPanel m_resourcesPanel;
 
     private int m_copperAmount = 0;
     private int m_ironAmount = 0;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Update()
     {
-        //TODO: Remove this once resource collecting is done, it is purely for testing
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetMouseButtonDown(0))
         {
-            m_copperAmount += 10;
-        }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            m_ironAmount += 10;
+            m_animator.SetTrigger("Swing");
         }
         UpdateResources();
     }
@@ -65,5 +67,25 @@ public class CharacterController : MonoBehaviour
     {
         m_resourcesPanel.UpdateCopper(m_copperAmount);
         m_resourcesPanel.UpdateIron(m_ironAmount);
+    }
+
+    private void Hit()
+    {
+        m_selector.Hit(m_weapon.GetDamage());
+    }
+
+    public void GetResources(EResource type, int qty)
+    {
+        switch (type)
+        {
+            case EResource.Copper:
+                m_copperAmount += qty;
+                break;
+            case EResource.Iron:
+                m_ironAmount += qty;
+                break;
+            default:
+                break;
+        }
     }
 }
