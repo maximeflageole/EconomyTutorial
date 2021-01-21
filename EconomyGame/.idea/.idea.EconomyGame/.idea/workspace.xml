@@ -11,9 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FollowingCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ResourcesPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EResource.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -23,6 +21,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ResourcePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ResourcesPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameplayObjects/ResourceComponent.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1n7asY4LKaBL75QiayH1wQseGe7" />
@@ -67,6 +66,7 @@
       <updated>1610743791548</updated>
       <workItem from="1610743797099" duration="2165000" />
       <workItem from="1611083473127" duration="3123000" />
+      <workItem from="1611262771733" duration="1559000" />
     </task>
     <servers />
   </component>
