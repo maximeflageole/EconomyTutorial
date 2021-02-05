@@ -45,6 +45,7 @@
             <e p="CharacterController.cs" t="Include" />
           </e>
           <e p="GameplayObjects" t="Include">
+            <e p="Building.cs" t="Include" />
             <e p="EResource.cs" t="Include" />
             <e p="FollowingCamera.cs" t="Include" />
             <e p="MeleeWeapon.cs" t="Include" />
@@ -55,6 +56,7 @@
           <e p="Tools and universal components" t="Include">
             <e p="BobblingComponent.cs" t="Include" />
             <e p="CyclicAnimation.cs" t="Include" />
+            <e p="GlowAndFlicker.cs" t="Include" />
             <e p="RotateTowardsMouse.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
