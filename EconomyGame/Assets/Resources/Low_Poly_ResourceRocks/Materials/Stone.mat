@@ -67,29 +67,29 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Lumin: 0.12
-    - _MaxLight: 1
+    - _Lumin: 0.36
+    - _MaxLight: 0.859
     - _Metallic: 0
-    - _MinLight: 0
+    - _MinLight: 0.593
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Offset: -0.1
-    - _OtlWidth: 2.86
+    - _Offset: 0.09
+    - _OtlWidth: 3.11
     - _Parallax: 0.02
     - _Segmented: 1
     - _ShnIntense: 0
     - _ShnOverlap: 0
-    - _ShnRange: 0.15
+    - _ShnRange: 0.096
     - _ShnSmooth: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 9.4
-    - _StpSmooth: 0.646
+    - _Steps: 13.7
+    - _StpSmooth: 0.163
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.59568626, g: 0.60784316, b: 0.62, a: 1}
+    - _Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _OtlColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShnColor: {r: 1, g: 1, b: 0, a: 1}

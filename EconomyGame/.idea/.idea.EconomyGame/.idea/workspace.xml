@@ -25,6 +25,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GameplayObjects/ResourceComponent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools and universal components/GlowAndFlicker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameplayObjects/Building.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1n7asY4LKaBL75QiayH1wQseGe7" />
@@ -71,6 +72,7 @@
       <workItem from="1611083473127" duration="3123000" />
       <workItem from="1611262771733" duration="3186000" />
       <workItem from="1612563058308" duration="1429000" />
+      <workItem from="1612987793271" duration="2069000" />
     </task>
     <servers />
   </component>

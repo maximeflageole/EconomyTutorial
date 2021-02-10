@@ -20,6 +20,12 @@ public class CharacterController : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        var rigidbody2d = GetComponent<Rigidbody2D>();
+        rigidbody2d.SetRotation(Camera.main.transform.rotation);
+    }
+    
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -31,22 +37,23 @@ public class CharacterController : MonoBehaviour
     
     void FixedUpdate()
     {
-        Vector2 movement = Vector2.zero;
+        var cam = Camera.main;
+        Vector3 movement = Vector3.zero;
         if (Input.GetKey(KeyCode.W))
         {
-            movement += Vector2.up;
+            movement += cam.transform.up;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            movement += Vector2.down;
+            movement -= cam.transform.up;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            movement += Vector2.left;
+            movement -= cam.transform.right;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            movement += Vector2.right;
+            movement += cam.transform.right;
         }
 
         if (movement.magnitude > 0f)
